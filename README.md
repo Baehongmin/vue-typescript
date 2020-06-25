@@ -22,3 +22,7 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+fix eslintrc.js
+vue add vutify
+npm i vue-material-design-icons
