@@ -11,6 +11,7 @@
 				</v-btn>
 			</v-fab-transition>
 			<v-btn color="error" @click="hidden = !hidden">+버튼생성기</v-btn>
+			<v-btn color="primary" @click="click">primary</v-btn>
 		</div>
 		<v-card class="mx-auto" color="#DE667D" dark max-width="400">
 			<v-card-title>
