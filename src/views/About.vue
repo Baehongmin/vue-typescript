@@ -105,13 +105,13 @@
 </template>
 <script lang="ts">
 // @ is an alias to /src
-import { Component, Vue } from 'vue-property-decorator';
+import { Component, Vue } from 'vue-property-decorator'
 
 @Component({
 	name: 'About',
 })
 export default class Home extends Vue {
-	private hidden = true;
+	private hidden = true
 	private items = [
 		{
 			color: '#1F7087',
@@ -125,9 +125,9 @@ export default class Home extends Vue {
 			title: 'Halcyon Days',
 			artist: 'Ellie Goulding',
 		},
-	];
+	]
 	public click() {
-		this.$router.push('/');
+		this.$router.push('/')
 	}
 }
 </script>

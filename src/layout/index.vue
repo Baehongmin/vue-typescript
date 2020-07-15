@@ -46,7 +46,28 @@
 				</v-list-item>
 			</v-list>
 		</v-navigation-drawer>
+		<v-app-bar app clipped-left color="red" dense>
+			<v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+			<v-icon class="mx-4" large>
+				mdi-telegram
+			</v-icon>
+			<v-toolbar-title class="mr-12 align-center">
+				<span class="title">HongTube</span>
+			</v-toolbar-title>
+			<v-spacer></v-spacer>
+			<v-row align="center" style="max-width: 650px">
+				<v-text-field
+					:append-icon-cb="() => {}"
+					placeholder="Search..."
+					single-line
+					append-icon="mdi-magnify"
+					color="white"
+					hide-details
+				></v-text-field>
+			</v-row>
+		</v-app-bar>
 		<v-main>
+			<router-view />
 			<v-container class="fill-height">
 				<v-row justify="center" align="center">
 					<v-col class="shrink">
@@ -94,7 +115,7 @@ export default class Layout extends Vue {
 	// 	this.$vuetify.theme.dark = true;
 	// }
 	public click() {
-		this.$router.push('About')
+		this.$router.push('/')
 	}
 }
 </script>
