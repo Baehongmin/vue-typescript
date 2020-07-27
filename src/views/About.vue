@@ -1,5 +1,6 @@
 <template>
 	<div class="about">
+		<Table />
 		<div class="text-center">
 			<v-btn color="primary" @click="click">primary</v-btn>
 		</div>
@@ -106,9 +107,13 @@
 <script lang="ts">
 // @ is an alias to /src
 import { Component, Vue } from 'vue-property-decorator'
+import Table from '../components/Table.vue'
 
 @Component({
 	name: 'About',
+	components: {
+		Table,
+	},
 })
 export default class Home extends Vue {
 	private hidden = true

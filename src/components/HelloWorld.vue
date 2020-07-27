@@ -40,12 +40,12 @@
 				</v-card>
 			</v-col>
 		</v-row>
+		<Table />
 	</v-container>
 </template>
 
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator'
-import Home from '../views/Home.vue'
 
 @Component({
 	name: 'HelloWorld',

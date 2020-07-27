@@ -1,8 +1,5 @@
 <template>
 	<div class="home">
-		<div class="text-center">
-			<v-btn color="primary" @click="click">primary</v-btn>
-		</div>
 		<HelloWorld msg="Welcome to Your Vue.js App" />
 	</div>
 </template>
